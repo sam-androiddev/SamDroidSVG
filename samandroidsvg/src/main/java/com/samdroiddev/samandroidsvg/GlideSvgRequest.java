@@ -83,11 +83,6 @@ public class GlideSvgRequest {
                 .load(drawable);
     }
 
-    public void load(@Nullable String string) {
-        requestBuilder
-                .load(string);
-    }
-
     public void load(@Nullable Uri uri) {
         requestBuilder
                 .load(uri);

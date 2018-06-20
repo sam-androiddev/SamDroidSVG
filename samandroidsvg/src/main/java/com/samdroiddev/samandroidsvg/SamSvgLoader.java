@@ -57,6 +57,12 @@ public class SamSvgLoader {
         return instance;
     }
 
+    public SamSvgLoader load(String url){
+        Uri uri = Uri.parse(url);
+        glideRequest.load(uri);
+        return instance;
+    }
+
     public SamSvgLoader into(ImageView imageView){
         glideRequest.into(imageView);
         return instance;
